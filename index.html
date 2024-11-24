@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Juegos de Isaac</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="./index.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a2dd6045c4.js" crossorigin="anonymous"></script>
+    <link rel="website icon" type="png" href="fotos/game-console.png">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./index.js" defer></script> <!-- Cambiado a index.js -->
+</head>
+
+<body>
+<section>
+    <div class="contenedor">
+        <div class="logo">
+            <img src="fotos/game-console.png" alt="Logo del sitio" width="90px">
+        </div>
+
+        <div class="formulario">
+            <form onsubmit="ingresar(event)">
+                <h2>Iniciar sesión</h2>
+                <div class="new-container">
+                    <i class="fa-solid fa-envelope"></i>
+                    <input type="text" id="usuario" required placeholder="Ingrese su usuario: ">
+                    <label for="usuario">usuario:</label>
+                </div>
+
+                <div class="new-container">
+                    <i class="fa-solid fa-lock"></i>
+                    <input type="password" id="contraseña" required placeholder="Ingrese su contraseña: ">
+                    <label for="contraseña">contraseña:</label>
+                </div>
+                <div class="olvidar">
+                    <label for="#">
+                        <input type="checkbox"> RECORDAR MI CONTRASEÑA
+                    </label>
+                </div>
+
+                <button type="submit" class="animated-button">
+                    <svg viewBox="0 0 24 24" class="arr-2" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"></path>
+                    </svg>
+                    <span class="text">Ingresar</span>
+                    <span class="circle"></span>
+                    <svg viewBox="0 0 24 24" class="arr-1" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"></path>
+                    </svg>
+                </button>
+            </form>
+        </div>
+    </div>
+</section>
+</body>
+</html>
